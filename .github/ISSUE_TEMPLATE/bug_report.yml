@@ -1,0 +1,25 @@
+name: Bug report
+description: Something in the chat or the skill does not work
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Output of `node -v; claude --version; codex --version; sw_vers -productVersion`
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Room files
+      description: Relevant lines from the room's `transcript.md` or `logs/`. Remove anything private first.
+      render: text

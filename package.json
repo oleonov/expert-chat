@@ -1,0 +1,59 @@
+{
+  "name": "expert-chat",
+  "version": "0.1.0",
+  "description": "Group chat in your terminal with the strongest Claude and GPT models: they debate, check each other against your code, and hand the decision back to Claude Code.",
+  "keywords": [
+    "claude",
+    "claude-code",
+    "codex",
+    "gpt",
+    "ai",
+    "agents",
+    "code-review",
+    "terminal",
+    "ink",
+    "cli"
+  ],
+  "license": "MIT",
+  "author": "Oleg Leonov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleonov/expert-chat.git"
+  },
+  "homepage": "https://github.com/oleonov/expert-chat#readme",
+  "bugs": {
+    "url": "https://github.com/oleonov/expert-chat/issues"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "os": [
+    "darwin"
+  ],
+  "bin": {
+    "expert-chat": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "skills"
+  ],
+  "scripts": {
+    "build": "tsc -p .",
+    "postbuild": "chmod +x dist/cli.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "ink": "8.0.0",
+    "ink-text-input": "6.0.0",
+    "react": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.7",
+    "@types/react": "19.3.1",
+    "ink-testing-library": "4.0.0",
+    "typescript": "7.0.2",
+    "vitest": "5.1.1"
+  }
+}
